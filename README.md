@@ -27,8 +27,6 @@ The primary goal of this project is to provide users with an engaging and intera
 cd random-quote-machine
 ```
 
-<b>NB> if the app display nothing then delete node_modules and follow the prompts below.
-
 3. Install dependencies:
 
 ```sh
