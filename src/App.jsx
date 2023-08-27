@@ -95,7 +95,7 @@ function App() {
             onClick={changeQuote}
             style={{ backgroundColor: quoteColor, transition }}
           >
-            Change Quote
+            Generate Quote
           </button>
         </div>
       </div>

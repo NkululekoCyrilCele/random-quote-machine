@@ -2,7 +2,9 @@
 
 ## Description
 
-This project was created using Vite, React, JavaScript, CSS, HTML, and Node.js. It showcases a [brief description of your project's main functionality or purpose].
+This project is a random quote generator created using Vite, React, JavaScript, CSS, HTML, and Node.js. It serves as a Frontend Libraries freeCodeCamp project and demonstrates a dynamic quote machine generator.
+
+The primary goal of this project is to provide users with an engaging and interactive experience. Each time the "Generate Quote" button is clicked, a new random quote is displayed, along with its author. The project showcases the power of React's component-based architecture and leverages modern web development technologies to create a seamless and visually appealing user interface.
 
 ## Table of Contents
 
@@ -39,7 +41,7 @@ npm install
 npm run dev
 ```
 
-Open your web browser and visit http://localhost:<port> to see the project in action.
+Open your web browser and visit http://localhost:port to see the project in action.
 
 ## Technologies Used
 
