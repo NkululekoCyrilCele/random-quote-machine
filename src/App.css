@@ -1,0 +1,58 @@
+.background {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+#quote-box {
+  display: grid;
+  gap: 1rem;
+  grid-template-rows: auto 1fr auto;
+  width: 700px;
+  min-height: 300px;
+  padding: 2rem;
+  text-align: left;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+}
+
+.quote-content {
+  display: grid;
+  gap: 1rem;
+  grid-template-rows: auto auto auto;
+  justify-content: space-between;
+  height: 220px;
+  margin: 10px;
+}
+
+#text,
+h2 {
+  transition: all 3s;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+#author {
+  text-align: right;
+}
+
+button,
+a {
+  margin-top: 80px;
+  font-family: inherit;
+  font-size: 1em;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-weight: 500;
+  background: #1a1a1a;
+  cursor: pointer;
+}
+
+button {
+  margin-left: 400px;
+}
