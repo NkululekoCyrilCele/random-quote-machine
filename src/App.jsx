@@ -21,7 +21,6 @@ function App() {
     }
     fetchRandomQuote();
   }, []);
-
   async function getQuotes() {
     const url =
       "https://gist.githubusercontent.com/camperbot/5a022b72e96c4c9585c32bf6a75f62d9/raw/e3c6895ce42069f0ee7e991229064f167fe8ccdc/quotes.json";
@@ -38,18 +37,16 @@ function App() {
       return [];
     }
   }
-
   async function getRandomQuote() {
     const quotes = await getQuotes();
     const randomIndex = Math.floor(Math.random() * quotes.length);
     return quotes[randomIndex];
   }
-
   function getRandomColor() {
     const red = Math.floor(Math.random() * 250);
     const green = Math.floor(Math.random() * 250);
     const blue = Math.floor(Math.random() * 250);
-    return `rgb(${red},${green},${blue})`;
+    return `rgb(${red}, ${green}, ${blue})`;
   }
 
   const transition = "all 3s";
@@ -63,13 +60,13 @@ function App() {
         <div className="quote-content">
           <h2 id="text" style={{ color: quoteColor, transition }}>
             <FaQuoteLeft
-              size="30"
+              size="20"
               style={{ marginRight: "10px", color: quoteColor, transition }}
             />
             {quote.quote}
             <FaQuoteRight
-              size="30"
-              style={{ marginLeft: "10px", color: quoteColor, transition }}
+              size="20"
+              style={{ marginRight: "10px", color: quoteColor, transition }}
             />
           </h2>
           <h4 id="author" style={{ color: quoteColor, transition }}>
@@ -81,6 +78,7 @@ function App() {
             href={
               "https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=${quote.quote}"
             }
+            target="_top"
             id="tweet-quote"
             style={{
               backgroundColor: quoteColor,
